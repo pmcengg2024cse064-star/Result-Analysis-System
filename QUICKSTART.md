@@ -1,53 +1,68 @@
-# 🚀 QUICK START GUIDE
+# 🚀 Quick Start Guide (Next.js Version)
 
-## Automated Exam Result Processing & Performance Analytics System
+## Step 1: Verify Files (Local Development)
 
----
+Make sure you have these files in your project root:
+- ✅ `package.json` - Dependencies
+- ✅ `next.config.js` - Next.js config
+- ✅ `tsconfig.json` - TypeScript config
+- ✅ `tailwind.config.js` - Tailwind CSS config
+- ✅ `app/` directory with all components
 
-## ⚡ 5-Minute Quick Start
+## Step 2: Install Dependencies
 
-### Step 1: Install Dependencies (First Time Only)
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
-### Step 2: Start the Application
+This installs:
+- Next.js 14
+- React 18
+- Tailwind CSS
+- Chart.js
+- XLSX (Excel handling)
+- jsPDF (PDF export)
+
+## Step 3: Run Development Server
+
 ```bash
-streamlit run app.py
+npm run dev
 ```
 
-### Step 3: Access the Web Interface
-- Application will open automatically in your browser
-- If not, go to: `http://localhost:8501`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
----
+## Step 4: Test the App
 
-## 📊 Using the Application
+### Try This:
+1. Click "📤 Upload & Validate" tab
+2. Click "📥 Download Sample Format" button
+3. Download sample Excel file
+4. Upload it back to the app
+5. Click "📈 Analysis & Statistics" to see charts
+6. Click "📄 Report" to export CSV/PDF
 
-### Workflow:
+## Step 5: Deploy to Vercel (Free!)
 
-#### **Page 1: Upload & Validate**
-1. Click "📤 Upload & Validate" in the sidebar
-2. Click "📥 Download Sample Format" to see the required Excel format
-3. Upload your Excel file (.xlsx)
-4. System automatically validates and displays results
-5. Processed data with grades appears on screen
+### Option A: GitHub + Vercel Dashboard
+```bash
+# 1. Push to GitHub
+git add .
+git commit -m "Convert to Next.js"
+git push
 
-#### **Page 2: Analysis & Statistics**
-1. Click "📈 Analysis & Statistics" in the sidebar
-2. View overall class statistics (average, GPA, pass rates, etc.)
-3. Explore four tabs:
-   - **📊 Top Performers** - Top 10 students
-   - **📉 Subject Analysis** - Strong and weak subjects
-   - **📈 Charts & Visualizations** - 5 analysis charts
-   - **📋 Full Student Data** - Complete records with filtering
+# 2. Go to https://vercel.com/new
+# 3. Import repository
+# 4. Click Deploy
+```
 
-#### **Page 3: Generate Report**
-1. Click "📄 Generate Report" in the sidebar
-2. Click "🎯 Generate PDF Report"
-3. Wait for PDF generation (30-60 seconds)
-4. Click "📥 Download PDF Report" to get your file
-5. PDF includes all analytics and charts
+### Option B: Vercel CLI
+```bash
+npm install -g vercel
+vercel
+# Follow prompts
+```
+
+Your app will be live at: `https://your-project.vercel.app`
 
 ---
 
