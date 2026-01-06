@@ -11,7 +11,8 @@ from pathlib import Path
 from contextlib import contextmanager
 
 # Add src directory to path for module imports
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_dir)
 
 from src.data_processor import DataProcessor
 from src.analyzer import Analyzer

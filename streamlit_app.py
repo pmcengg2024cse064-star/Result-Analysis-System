@@ -8,10 +8,9 @@ import os
 from pathlib import Path
 
 # Add src directory to path for module imports
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-
-# Import and run the main app
-from app import main
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 if __name__ == "__main__":
+    # Import and run the main app
+    from app import main
     main()
