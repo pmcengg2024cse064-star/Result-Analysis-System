@@ -1,0 +1,19 @@
+[theme]
+primaryColor = "#2dd4bf"
+backgroundColor = "#0b1020"
+secondaryBackgroundColor = "#081226"
+textColor = "#e6eef8"
+font = "sans serif"
+
+[client]
+showErrorDetails = true
+toolbarMode = "viewer"
+
+[logger]
+level = "info"
+
+[server]
+port = 8501
+maxUploadSize = 200
+enableCORS = false
+enableXsrfProtection = true
